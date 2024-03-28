@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block title %}New Post{% endblock title %}
+{% block content %}
+<h1>New Post</h1>
+<form method="POST">
+    {% csrf_token %} <!-- Cross Site Requests Forgery, popular cyber securiyt attacks  -->
+    {{ form.as_p }} <!-- form is created with paragraph tag, can also do table or ul -->
+    <input type="submit" class="btn btn-success" value="Create">
+</form>
+{% endblock content %}

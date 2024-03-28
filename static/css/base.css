@@ -1,0 +1,21 @@
+form p input,
+form p textarea,
+form input {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+form p label {
+    width: 100%;
+    font-size: 24px;
+}
+
+#id_title {
+    color: red;
+}
+
+body div .container {
+    background-color: lightslategray;
+}
